@@ -19,7 +19,7 @@ for filename in os.listdir('originals'):
     if not (filename.endswith ('.png') or filename.endswith ('.jpg')) or filename == LOGO_FILENAME: 
        continue
 
-    im = Image.open(os.path.join ('originals', file))
+    im = Image.open(os.path.join ('originals', filename)
     width, height = im.size
     if width > SQUARE_FIT_SIZE and height > SQUARE_FIT_SIZE:
        if width > height:
